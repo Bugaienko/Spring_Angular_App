@@ -15,12 +15,16 @@ import {RouterOutlet} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {authErrorInterceptorProvider} from "./helper/error-interceptor.service";
 import {authInterceptorProviders} from "./helper/auth-interceptor.service";
+import { NavigationComponent } from './layout/navigation/navigation.component';
+import { IndexComponent } from './layout/index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    NavigationComponent,
+    IndexComponent,
 
   ],
   imports: [

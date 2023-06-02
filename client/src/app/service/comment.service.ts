@@ -20,7 +20,7 @@ export class CommentService {
   }
 
   getCommentToPost(postId: number): Observable<any> {
-    return this.http.get(COMMENT_API + postId + 'all')
+    return this.http.get(COMMENT_API + postId + '/all')
   }
 
   deletePost(commentId: number): Observable<any> {
